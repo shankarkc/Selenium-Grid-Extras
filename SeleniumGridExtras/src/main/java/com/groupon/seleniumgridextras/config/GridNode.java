@@ -131,7 +131,7 @@ public class GridNode {
         if(topLevelJson.get("custom") != null) {
           Map<String, Object> customMap = new Gson().fromJson(topLevelJson.get("custom"), type);
           doubleToIntConverter(customMap);
-          node.setCustom(customMap);
+         // node.setCustom(customMap);
         }
         
         Type listType = new TypeToken<ArrayList<String>>(){}.getType();
