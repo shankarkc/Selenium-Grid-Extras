@@ -44,7 +44,7 @@ public class GridNode {
   private Integer registerCycle;
   private Integer nodeStatusCheckTimeout;
   private String appiumStartCommand;
-  private Map<String, Object> custom = new HashMap();
+  // private Map<String, Object> custom = new HashMap();
 
   //Only test the node status 1 time, since the limit checker is
   //Since DefaultRemoteProxy.java does this check failedPollingTries >= downPollingLimit
