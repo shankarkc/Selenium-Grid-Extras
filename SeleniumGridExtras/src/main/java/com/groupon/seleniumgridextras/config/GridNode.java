@@ -127,12 +127,12 @@ public class GridNode {
                 ? topLevelJson.get("appiumStartCommand").getAsString() : null);
 
         // Adding custom-config see Issue #342
-        Type type = new TypeToken<Map<String, Object>>(){}.getType();
+       /* Type type = new TypeToken<Map<String, Object>>(){}.getType();
         if(topLevelJson.get("custom") != null) {
           Map<String, Object> customMap = new Gson().fromJson(topLevelJson.get("custom"), type);
           doubleToIntConverter(customMap);
-         // node.setCustom(customMap);
-        }
+          node.setCustom(customMap);
+        }*/
         
         Type listType = new TypeToken<ArrayList<String>>(){}.getType();
         if(topLevelJson.get("servlets") != null) {
