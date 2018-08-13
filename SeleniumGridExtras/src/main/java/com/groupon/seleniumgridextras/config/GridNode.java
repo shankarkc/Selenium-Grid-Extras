@@ -367,7 +367,7 @@ public class GridNode {
   public boolean isAppiumNode() {
     return getLoadedFromFile().startsWith("appium");
   }
-
+/*
   public Map<String, Object> getCustom() {
     return custom;
   }
@@ -375,7 +375,7 @@ public class GridNode {
   public void setCustom(Map<String, Object> custom) {
     this.custom = custom;
   }
-
+*/
   public void writeToFile(String filename) {
 
     try {
